@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Krutā Matemātika</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="title">
+          <a href="index.html">Krutā Matemātika</a>
+        </div>
+        <nav class="nav">
+          <a href="atgadnes.html">Atgādnes</a>
+          <a href="treninuzdevumi.html">Treniņuzdevumi</a>
+        </nav>
+        <div class="help-icon">
+          <a href="#">?</a>
+        </div>
+        <!-- Mobile Sidebar Toggle -->
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+      </header>
+  
+      <!-- Main Layout -->
+      <main class="main">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+          <a href="atgadnes/10.html">10. klase</a>
+          <a href="atgadnes/11.html">11. klase</a>
+          <a href="atgadnes/12.html">12. klase</a>
+        </aside>
+  
+        <!-- Content -->
+        <section class="content">
+          <h1>Atgādnes</h1>
+          <a href="atgadnes/10.html">10. klase</a>
+          <a href="atgadnes/11.html">11. klase</a>
+          <a href="atgadnes/12.html">12. klase</a>
+        </section>
+      </main>
+    </div>
+  
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("show");
+      }
+    </script>
+  </body>
+</body>
+</html>
